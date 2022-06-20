@@ -1,0 +1,307 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "1column Mcolumn Lcolumn"
+    "1column Mcolumn Lcolumn"
+    ;
+}
+.header {
+    grid-area: header;
+    background-color: #161B22;
+    color: #C9D1D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 30px;
+    margin: 0;
+}
+.header h3 {
+    align-self: center;
+}
+.pull {
+    margin-right: 10px;
+    font-size: 1.2vw;
+}
+.profile-symbol {
+    display: flex;
+    align-items: center;
+}
+.profile-symbol span {
+    font-size: 5px;
+    position: relative;
+    left: 15px;
+    bottom: 5px;
+}
+.noti-icon {
+    margin-right: 10px;
+   
+}
+.pi-icon {
+    margin-left: 10px;
+}
+.img {
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+.head-search {
+    margin: 0 10px 0 0;
+    width: 235px;
+    padding: 5px;
+    background-color: #0D1117;
+    border: 0.5px solid #C9D1D9;
+    border-radius: 5px;
+}
+
+/*the styling for the h3 headers and paragraphs are below*/
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+}
+p {
+    font-size: 0.7vw;
+    color: rgb(177, 177, 177);
+    font-family: Roboto, Arial;
+}
+/*from this part is the div for the side column*/
+.side-column {
+    grid-area: 1column;
+    background-color: #161B22;
+    color: #C9D1D9;
+    padding: 15px;
+    border-right: 0.055px solid #636363;
+}
+.side-pp {
+    display: flex;
+    align-items: center;
+}
+.first-side-pp {
+    width: 30px;
+    border-radius: 50%;
+}
+.second-side-but-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-side-but {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
+.side-search {
+    width: 250px;
+    padding: 5px;
+    background-color: #0D1117;
+    border: 0.5px solid #C9D1D9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.side-search:focus {
+    outline: none;
+    color: white;
+}
+.position {
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 0.8vw;
+}
+img {
+    width: 15px;
+    border-radius: 50%;
+}
+span {
+    font-size: small;
+    font-family: Roboto, Arial;
+}
+/* here is where the middle column begins.*//* the middle page starts from here. */
+
+.middle-column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    grid-area: Mcolumn;
+    background-color: #0D1117;
+    color: #c9D1D9;
+}
+.middle-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #C9D1D9;
+    padding-left: 30px;
+}
+h4 {
+    font-family: Roboto, Arial;
+    font-size: 1vw;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.beta-but {
+    background: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+
+.activity {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.activity h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8vw;
+}
+.middle-column-details {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #161B22;
+    padding: 0 20px 0 20px;
+    margin-left: 40px;
+}
+.mid-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mid-col h3 {
+    font-size: 0.8vw;
+}
+.middle-column-but {
+    color: #C9D1D9;
+    background-color: #636363;
+    border: none;
+    border-radius: 7px;
+}
+.mid-col-p p {
+    margin-top: -2px;
+}
+.mid-col-h {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+.mid-col-h h6 {
+    margin-right: 10px;
+   color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+}
+/* the right column starts from this side. */
+
+.right-column {
+    background-color: #0D1117;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 20px;
+}
+.top-container {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #161B22;
+}
+.github-thing {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.git-info p {
+    color: white;
+    font-size: 0.9vw;
+}
+.git-info h4 {
+    margin: 0;
+    margin-top: -15px;
+    font-size: 0.7vw;
+}
+a{
+    color: rgb(97, 173, 255);
+    text-decoration: none;
+}
+.center {
+    padding: 20px;
+    border-left: 1px solid gray;
+}
+.dot {
+    position: relative;
+    right: 26px;
+    top: 26px;
+    font-size: large;
+    color: gray;
+}
+/* the bottome right section starts from this part*/
+
+h2 {
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.explore h3 {
+    font-size: 0.7vw;
+}
+.last {
+    display: flex;
+    margin-top: -40px;
+}
+.last h6 {
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: x-small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
