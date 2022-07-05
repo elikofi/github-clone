@@ -1,3 +1,4 @@
+/*styling from the heading part of the page.*/
 .container {
     height: 100%;
     display: grid;
@@ -49,6 +50,7 @@
     position: relative;
     right: 10px;
     top: 10px;
+    cursor: pointer;
 }
 .head-search {
     margin: 0 10px 0 0;
@@ -57,12 +59,18 @@
     background-color: #0D1117;
     border: 0.5px solid #C9D1D9;
     border-radius: 5px;
+    color: white;
+}
+.head-search:focus {
+    outline: none;
+    color: white;
 }
 
 /*the styling for the h3 headers and paragraphs are below*/
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1vw;
+    cursor: pointer;
 }
 p {
     font-size: 0.7vw;
@@ -96,6 +104,7 @@ p {
     border: none;
     border-radius: 7px;
     padding: 5px 10px 5px 10px;
+    cursor: pointer;
 }
 .side-search {
     width: 250px;
@@ -105,6 +114,7 @@ p {
     border-radius: 5px;
     margin-bottom: 10px;
     padding-left: 10px;
+    color: white;
 }
 .side-search:focus {
     outline: none;
@@ -116,7 +126,7 @@ p {
     font-size: 0.8vw;
 }
 img {
-    width: 15px;
+    width: 20px;
     border-radius: 50%;
 }
 span {
@@ -232,7 +242,7 @@ a{
     text-decoration: none;
 }
 .center {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     border-left: 1px solid gray;
 }
 .dot {
